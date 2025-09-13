@@ -2,16 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Restaurant Landing Page</title>
   <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts -->
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800&family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo"></div>
-    <nav>
-      <ul class="nav-links">
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Home"></a>
+
+    <!-- Desktop nav (shown ≥1024px) -->
+    <nav class="nav-desktop" aria-label="Primary">
+      <ul class="nav-list">
         <li><a href="#">Home</a></li>
         <li><a href="#">Order</a></li>
         <li><a href="#">Food</a></li>
@@ -19,9 +26,25 @@
         <li><a href="#">Testimonials</a></li>
         <li><a href="#">Contact Us</a></li>
       </ul>
-      <img src="images/menu-bar.png" alt="menu" class="menu-icon" />
     </nav>
+
+    <!-- Mobile toggle (shown <1024px) -->
+    <button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false" aria-label="Menu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
   </header>
+
+  <!-- Collapsible mobile menu -->
+  <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile Primary" hidden>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Order</a></li>
+      <li><a href="#">Food</a></li>
+      <li><a href="#">Restaurant</a></li>
+      <li><a href="#">Testimonials</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
 
   <!-- Section 1 -->
   <section class="section-one">
@@ -30,8 +53,7 @@
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id est vitae dolor rhoncus tristique.
         Maecenas metus quam, rhoncus euismod lorem in, sollicitudin viverra eros. Donec dictum luctus quam ut tristique.
-        Curabitur nec faucibus purus. Quisque congue sem nec justo mollis, in tincidunt erat pretium.
-        Sed pulvinar, massa ac porta viverra.
+        Curabitur nec faucibus purus. Quisque congue sem nec justo mollis, in tincidunt erat pretium. Sed pulvinar, massa ac porta viverra.
       </p>
       <button class="btn">Click Me</button>
     </div>
@@ -40,14 +62,11 @@
     </div>
   </section>
 
-  <!-- Section 2 (exact match) -->
+  <!-- Section 2 (mosaic + highlight card) -->
   <section class="section-two">
     <div class="mosaic">
-      <!-- Top-left -->
       <img src="images/pexels-rachel-claire-6752433.jpg" alt="" class="img-a" />
-      <!-- Right column spanning two rows -->
       <img src="images/pexels-mister-mister-3434523.jpg" alt="" class="img-b" />
-      <!-- Bottom-left -->
       <img src="images/pexels-eva-bronzini-6141651.jpg" alt="" class="img-c" />
     </div>
 
@@ -57,5 +76,7 @@
       <a href="#" class="click-link">Click <img src="images/icons8-arrow-30.png" alt="arrow" /></a>
     </div>
   </section>
+
+  <script src="main.js"></script>
 </body>
 </html>
