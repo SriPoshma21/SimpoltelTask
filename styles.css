@@ -1,7 +1,7 @@
 /* Root font variables */
 :root{
   --font-heading: "League Spartan", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
-  /* --font-ui: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif; */
+  --font-ui: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-body: "Roboto", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -40,8 +40,6 @@ body{
 
 /* Button text */
 .btn{
-  /* font-family: var(--font-ui); */
-  /* font-weight: 700; */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 0.06em;
 }
